@@ -1,0 +1,56 @@
+.header {
+  margin: 0;
+  padding: 0;
+  
+  @extend %flexbox-column;
+  align-items: center;
+  flex-wrap: wrap;
+  
+  background-color: $background-color-header;
+  border: 1px solid $color-border;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+
+  @extend %flexbox-row;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 0;
+
+  background-color:  $background-color-container;
+}
+
+.footer {
+  margin: 0;
+  padding: 1%;
+
+  @extend %flexbox-column;
+  justify-content: center;
+  align-items: center;
+  color: $color-white;
+
+  text-align: center;
+
+  background-color: $background-color-footer;
+}
+
+.content {
+  margin: 1%;
+  padding: 1%;
+
+  @extend %flexbox-column;
+  flex: 400px;
+  height: auto;
+}
+
+.sidebar {
+  margin: 1%;
+  padding: 1%;
+
+  @extend %flexbox-column;
+  
+  flex: 50px;
+  height: auto;
+}

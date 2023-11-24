@@ -1,0 +1,21 @@
+.content-aling-right {
+  margin: 1%;
+  padding: 1%;
+
+  @extend %flexbox-row;
+  justify-content: right;
+  align-items: center;
+  flex: 100px;
+  height: 100px;
+}
+
+.content-aling-center {
+  margin: 1px;
+  padding: 1px;
+
+  @extend %flexbox-row;
+  justify-content: center;
+  align-items: center;
+  flex: 100px;
+  height: 100px;
+}

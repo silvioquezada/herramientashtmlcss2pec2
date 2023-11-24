@@ -1,0 +1,15 @@
+%flexbox-column {
+  display: flex;
+  flex-direction: column;
+}
+
+%flexbox-row {
+  display: flex;
+  flex-direction: row;
+}
+
+%position-content {
+  margin-top: 2%;
+  margin-bottom:  2%;
+  padding: 0;
+}

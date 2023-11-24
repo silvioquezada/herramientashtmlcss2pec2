@@ -1,0 +1,28 @@
+@media screen and (min-width: $high-width) {
+  
+  .header { flex-direction: row; }
+
+  .container { row-gap: 10px; }
+
+  .content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 5px;
+  }
+  
+  .sidebar {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 20px;  
+  }
+}
