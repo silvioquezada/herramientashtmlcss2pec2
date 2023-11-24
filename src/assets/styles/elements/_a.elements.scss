@@ -1,10 +1,9 @@
 a {
-  @extend %position-content;
-
   color: $color-text-content;
   text-decoration: none;
   
   &:hover {
     font-weight: bold;
+    color: rgb(245, 157, 35);
   }
 }

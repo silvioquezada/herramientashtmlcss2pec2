@@ -1,9 +1,5 @@
-.photo {
-  margin: 1%;
-  padding: 1%;
-
-  width: 200px;
-  height: 200px;
+.logoencabezado{
+  height: 13vh;
+  width: 13vh;
+  object-fit: contain;
 }
-
-.circle { clip-path: circle(40% at center); }

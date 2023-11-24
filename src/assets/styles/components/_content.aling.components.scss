@@ -1,21 +1,20 @@
-.content-aling-right {
-  margin: 1%;
-  padding: 1%;
-
-  @extend %flexbox-row;
-  justify-content: right;
+.content-align-right {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: end;
+  text-align: right;
   align-items: center;
-  flex: 100px;
-  height: 100px;
 }
 
-.content-aling-center {
-  margin: 1px;
-  padding: 1px;
-
-  @extend %flexbox-row;
-  justify-content: center;
+.content-align-left {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: left;
   align-items: center;
-  flex: 100px;
-  height: 100px;
+}
+
+
+.block-inline {
+  display: inline-block;
+  padding-left: 12px;
 }
