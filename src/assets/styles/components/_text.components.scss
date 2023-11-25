@@ -1,5 +1,7 @@
-.text-big { @include aparence-text($font-size: 38px, $font-weight: bold, $color: $color-primary); }
+//.text-big { @include aparence-text($font-size: 38px, $font-weight: bold, $color: $color-primary); }
 
-.text-medium { @include aparence-text($font-size: 24px, $font-weight: 100, $color: $color-secondary); }
+//.text-medium { @include aparence-text($font-size: 24px, $font-weight: 100, $color: $color-secondary); }
 
-.title { @include aparence-text($font-size: 24px, $font-weight: bold, $color: $color-primary); }
+//.title { @include aparence-text($font-size: 24px, $font-weight: bold, $color: $color-primary); }
+
+.text-color-white { color: $text-color-white }
