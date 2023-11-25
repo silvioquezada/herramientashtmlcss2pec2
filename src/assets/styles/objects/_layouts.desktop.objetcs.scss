@@ -31,4 +31,15 @@
     grid-row: 3;
     border: 1px solid rgb(49, 10, 190);
   }
+
+  .portada {
+    background: url(../images/portada.jpg) no-repeat fixed 0% 0%/cover;
+	  cursor: default;
+    padding: 0%;
+    color: #ffffff;
+    font-family: 'Work Sans', sans-serif;
+    width: 100%;
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+  }
 }
