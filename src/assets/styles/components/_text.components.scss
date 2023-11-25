@@ -1,7 +1,9 @@
-//.text-big { @include aparence-text($font-size: 38px, $font-weight: bold, $color: $color-primary); }
+.text-title { @include aparence-text($font-size: 38px, $font-weight: bold); }
 
-//.text-medium { @include aparence-text($font-size: 24px, $font-weight: 100, $color: $color-secondary); }
+.text-medium { @include aparence-text($font-size: 24px, $font-weight: 100); }
 
 //.title { @include aparence-text($font-size: 24px, $font-weight: bold, $color: $color-primary); }
 
-.text-color-white { color: $text-color-white }
+.text-color-white { color: $color-white }
+
+.text-color-yellow { color: $color-yellow }

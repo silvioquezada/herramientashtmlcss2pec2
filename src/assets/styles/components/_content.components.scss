@@ -1,4 +1,4 @@
-.content-align-right {
+.content-align-row-right {
   display: flex;
   flex-flow: row wrap;
   justify-content: end;
@@ -8,7 +8,7 @@
   text-align: right;
 }
 
-.content-align-left {
+.content-align-row-left {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -17,7 +17,7 @@
   text-align: left;
 }
 
-.content-align-center {
+.content-align-row-center {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -25,6 +25,14 @@
   width: 100%;
 
   text-align: center;
+}
+
+.content-align-column-center {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .block-inline-right {
@@ -46,6 +54,10 @@
   //row-gap: 20px;
   //column-gap: 0;
   //flex: 2 400px;
+}
+
+.content-color-gris {
+  background-color: $color-grey;
 }
 
 /*
