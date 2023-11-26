@@ -11,7 +11,8 @@
 .content-align-row-left {
   display: flex;
   flex-flow: row wrap;
-  align-items: center;
+  
+  //align-items: center;
   width: 100%;
 
   text-align: left;
@@ -33,6 +34,13 @@
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+
+.content-align-column-left {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .block-inline-right {

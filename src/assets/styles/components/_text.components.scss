@@ -2,8 +2,14 @@
 
 .text-medium { @include aparence-text($font-size: 24px, $font-weight: 100); }
 
+.text-info { @include aparence-text($font-size: 18px, $font-weight: 100); padding-bottom: 2%; }
+
+.bleeding { padding-left: 5%; }
+
 //.title { @include aparence-text($font-size: 24px, $font-weight: bold, $color: $color-primary); }
 
 .text-color-white { color: $color-white }
 
 .text-color-yellow { color: $color-yellow }
+
+.text-shading { background-color: $color-shading; }
