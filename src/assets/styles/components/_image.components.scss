@@ -19,8 +19,15 @@
   opacity: 0.9;
 }
 
-.image{
+.image-card {
   height: 200px;
+  width: 100%;
+  
+  object-fit:cover;
+}
+
+.image-blog {
+  height: 100%;
   width: 100%;
   
   object-fit:cover;
