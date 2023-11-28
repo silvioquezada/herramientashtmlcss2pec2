@@ -13,3 +13,8 @@
   font-weight: $font-weight;
 }
 
+
+@mixin width-flex($width, $flex) {
+  width: $width;
+  flex: $flex;
+}

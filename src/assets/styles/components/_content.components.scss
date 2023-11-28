@@ -1,6 +1,7 @@
 .content-align-row-right {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: end;
   align-items: center;
   width: 100%;
@@ -10,17 +11,20 @@
 
 .content-align-row-left {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
+  padding-left: 2px;
 
   text-align: left;
 }
 
 .content-align-row-center {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: left;
+  align-items: center;
   width: 100%;
 
   text-align: center;
@@ -28,17 +32,16 @@
 
 .content-align-column-center {
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
 
-.content-align-column-left {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+.content-align-column-normal {
+  @extend %flexbox-row;
+  justify-content: center;
 }
 
 .block-inline-right {
@@ -46,13 +49,12 @@
   display: inline-block;
 }
 
-.block-inline {
+.block-inline-left {
   padding-right: 20px;
   display: inline-block;
 }
 
 .section-row {
-  //@extend %flexbox-row;
     width: 100%;
 }
 
@@ -64,31 +66,21 @@
 
 .bleeding-margin-right { padding-right: 6%; }
 
-.content-full { padding-left: 0; padding-right: 0; }
+.content-full {
+  padding-left: 0;
+  padding-right: 0;
+}
 
 .content-summary {
-  display: flex;
-  flex-direction: row;
+  @extend %flexbox-row;
   flex-wrap: wrap;
 }
 
-.content-width-x1 {
-  width: 25%;
-  flex: 100px;
-}
+.content-width-x1 { @include width-flex($width: 25%, $flex: 100px); }
 
-.content-width-x2 {
-  width: 50%;
-  flex: 200px;
-}
+.content-width-x2 { @include width-flex($width: 50%, $flex: 200px); }
 
 .lineal-border-top-bottom {
-  border-top: 1px solid rgb(49, 10, 190);
-  border-bottom: 1px solid rgb(49, 10, 190);
-}
-
-.content-align-column {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  border-top: 1px solid $color-grey;
+  border-bottom: 1px solid $color-grey;
 }
