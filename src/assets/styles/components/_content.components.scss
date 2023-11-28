@@ -69,6 +69,17 @@
 .content-summary {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.content-width-x1 {
+  width: 25%;
+  flex: 100px;
+}
+
+.content-width-x2 {
+  width: 50%;
+  flex: 200px;
 }
 
 .lineal-border-top-bottom {
