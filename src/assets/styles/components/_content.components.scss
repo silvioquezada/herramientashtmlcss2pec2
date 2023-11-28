@@ -11,8 +11,6 @@
 .content-align-row-left {
   display: flex;
   flex-flow: row wrap;
-  
-  //align-items: center;
   width: 100%;
 
   text-align: left;
@@ -45,13 +43,11 @@
 
 .block-inline-right {
   padding-left: 12px;
-  
   display: inline-block;
 }
 
 .block-inline {
   padding-right: 20px;
-  
   display: inline-block;
 }
 
@@ -64,14 +60,24 @@
   background-color: $color-grey;
 }
 
-/*
-.column-section {
-  flex: 2 400px;
-}
-*/
-
 .bleeding-margin-left { padding-left: 6%; }
 
 .bleeding-margin-right { padding-right: 6%; }
 
 .content-full { padding-left: 0; padding-right: 0; }
+
+.content-summary {
+  display: flex;
+  flex-direction: row;
+}
+
+.lineal-border-top-bottom {
+  border-top: 1px solid rgb(49, 10, 190);
+  border-bottom: 1px solid rgb(49, 10, 190);
+}
+
+.content-align-column {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

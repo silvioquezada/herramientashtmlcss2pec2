@@ -26,9 +26,16 @@
   object-fit:cover;
 }
 
-.image-blog {
+.image-title-blog {
   height: 100%;
   width: 100%;
   
-  object-fit:cover;
+  object-fit: cover;
+}
+
+.image-content-blog {
+  height: 500px;
+  width: 100%;
+
+  object-fit:fill;
 }
