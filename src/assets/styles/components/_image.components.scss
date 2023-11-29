@@ -1,7 +1,17 @@
-.logo{
+.logo {
   padding: 1%;
   height: 13vh;
   width: 13vh;
+}
+
+.icon {
+  color: $color-white;
+  font-size: 18px;
+  text-align: center;
+}
+
+.image {
+  width: 100%;
 }
 
 @supports (display: grid) {

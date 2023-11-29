@@ -1,9 +1,31 @@
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Ubícanos</h5>
+        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+        <div class="row">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31864.540956581706!2d-79.8306620121002!3d-3.33347155077217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9033148c6a410777%3A0x895a13384dc50092!2sOchoa%20Le%C3%B3n%2C%20Pasaje!5e0!3m2!1ses-419!2sec!4v1701265362861!5m2!1ses-419!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" type="button" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <main class="container">
   <div class="row">
   <h1>Escríbenos</h1>
   </div>
+  
   <div class="row">
-    <div class="col">
+    <div class="col-6">
       
       <form class="foo">
         <div class="mb-3">
@@ -18,25 +40,24 @@
           <label class="form-label" for="coments">Comentario:</label>
           <textarea class="form-control"></textarea>
         </div>
-        <button class="btn btn-primary" type="submit">Enviar</button>
+        <button class="btn btn-primary" type="submit"><i class="fa-solid fa-paper-plane"></i> Enviar</button>
       </form>
 
-
     </div>
-    <div class="col">
+
+    <div class="col-6">
       <div class="container py-4 px-3 mx-auto">
         <div class="alert alert-info d-flex align-items-center" role="alert">
           <div>
             <i class="fa-solid fa-circle-info"></i> Síguenos en nuestro canal de Youtube
           </div>
         </div>
-        <button class="btn btn-danger"><i class="fa-brands fa-youtube"></i> Apóyanos con un like</button>
+        <button class="btn btn-danger" onClick="window.location.href = 'https://www.youtube.com/channel/UCeYdusEIaQXu9YABYDQjaew';"><i class="fa-brands fa-youtube"></i> Apóyanos con un like</button>
+
+        <button class="btn btn-secondary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <i class="fa-solid fa-location-dot"></i> Ubícanos
+        </button>
       </div>
     </div>
   </div>
-
-  
-
-  
-
 </main>

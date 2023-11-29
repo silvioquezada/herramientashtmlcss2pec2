@@ -7,6 +7,11 @@
   padding-bottom: 2%;
 }
 
+.text-item {
+  @include aparence-text($font-size: 18px, $font-weight: 100);
+  padding-top: 3%;
+}
+
 .title-content {
   @include aparence-text($font-size: 24px, $font-weight: bold);
   padding-top: 5%;
@@ -28,8 +33,10 @@
   border-radius: 0.8em;
 }
 
-.text-color-white { color: $color-white }
+.text-color-black { color: $color-primary; }
 
-.text-color-yellow { color: $color-yellow }
+.text-color-white { color: $color-white; }
+
+.text-color-yellow { color: $color-yellow; }
 
 .text-shading { background-color: $color-shading; }

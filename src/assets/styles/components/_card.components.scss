@@ -9,10 +9,11 @@
   padding-right: 30px;
 
   @extend %flexbox-column;
-  flex: 250px;
+  flex: 300px;
 
   background-color: $color-white;
   border: 1px solid $color-border-card;
+  border-radius: 5px;
 }
 
 .card-not-line { 
