@@ -1,23 +1,27 @@
-.text-title { @include aparence-text($font-size: 38px, $font-weight: bold); }
+.text-title { @include aparence-text($font-size: $font-size-big, $font-weight: bold); }
 
-.text-medium { @include aparence-text($font-size: 24px, $font-weight: 100); }
+.text-medium { @include aparence-text($font-size: $font-size-medium, $font-weight: 100); }
 
-.text-info {
-  @include aparence-text($font-size: 18px, $font-weight: 100);
+.text-normal {
+  @include aparence-text($font-size: $font-size-normal, $font-weight: 100);
   padding-bottom: 2%;
 }
 
+.text-bold {
+  font-weight: 700;
+}
+
 .text-item {
-  @include aparence-text($font-size: 18px, $font-weight: 100);
+  @include aparence-text($font-size: $font-size-normal, $font-weight: 700);
   padding-top: 3%;
 }
 
 .title-content {
-  @include aparence-text($font-size: 24px, $font-weight: bold);
+  @include aparence-text($font-size: $font-size-medium, $font-weight: bold);
   padding-top: 5%;
 }
 
-.text-content { @include aparence-text($font-size: 16px, $font-weight: 100); }
+.text-content { @include aparence-text($font-size: $font-size-small, $font-weight: 100); }
 
 .text-circle {
   display: inline-block;
