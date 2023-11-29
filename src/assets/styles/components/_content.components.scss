@@ -24,7 +24,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: left;
   width: 100%;
 
   text-align: center;
@@ -59,7 +59,7 @@
 }
 
 .content-color-gris {
-  background-color: $color-grey;
+  background-color: $color-primary;
 }
 
 .bleeding-margin-left { padding-left: 6%; }
@@ -81,6 +81,10 @@
 .content-width-x2 { @include width-flex($width: 50%, $flex: 200px); }
 
 .lineal-border-top-bottom {
-  border-top: 1px solid $color-grey;
-  border-bottom: 1px solid $color-grey;
+  border-top: 1px solid $color-primary;
+  border-bottom: 1px solid $color-primary;
 }
+
+// .foo {
+//   background: color(display-p3 1 0 0); /* eye dropper returns: color(display-p3 0.92 0.2 0.14) */
+// }

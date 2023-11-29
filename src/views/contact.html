@@ -1,31 +1,36 @@
 <main class="container">
-
+  <div class="row">
+  <h1>Escríbenos</h1>
+  </div>
   <div class="row">
     <div class="col">
       
-      <form>
+      <form class="foo">
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
+          <label class="form-label" for="name">Nombres y Apellidos:</label>
+          <input class="form-control" type="name" id="name">
         </div>
         <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
+          <label class="form-label" for="email">Correo electrónico:</label>
+          <input class="form-control" type="email" id="email">
         </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Verificado</label>
+        <div class="mb-3">
+          <label class="form-label" for="coments">Comentario:</label>
+          <textarea class="form-control"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
+        <button class="btn btn-primary" type="submit">Enviar</button>
       </form>
 
 
     </div>
     <div class="col">
       <div class="container py-4 px-3 mx-auto">
-        <h1>Hello, Bootstrap and Parcel!</h1>
-        <button class="btn btn-primary">Primary button</button>
+        <div class="alert alert-info d-flex align-items-center" role="alert">
+          <div>
+            <i class="fa-solid fa-circle-info"></i> Síguenos en nuestro canal de Youtube
+          </div>
+        </div>
+        <button class="btn btn-danger"><i class="fa-brands fa-youtube"></i> Apóyanos con un like</button>
       </div>
     </div>
   </div>
