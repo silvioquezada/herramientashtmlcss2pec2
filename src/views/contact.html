@@ -20,6 +20,18 @@
 </div>
 
 <main class="container">
+
+  <div class="toast toast-relative" id="toastmessague">
+    <div class="toast-header tast-align-row-right">
+      Información
+      <button class="btn-close" type="button" data-bs-dismiss="toast"></button>
+    </div>
+    <div class="toast-body">
+     Se almacenado Exitosamente.
+    </div>
+  </div>
+ 
+
   <div class="row">
   <h1>Escríbenos</h1>
   </div>
@@ -29,18 +41,28 @@
       
       <form class="foo">
         <div class="mb-3">
-          <label class="form-label" for="name">Nombres y Apellidos:</label>
-          <input class="form-control" type="name" id="name">
+          <label class="form-label" for="username">Nombres y Apellidos:</label>
+          <input class="form-control" type="text" id="username">
+          <small class="messague" id="messagueusername">Mensaje de Error</small>
         </div>
         <div class="mb-3">
           <label class="form-label" for="email">Correo electrónico:</label>
           <input class="form-control" type="email" id="email">
+          <small class="messague" id="messagueemail">Mensaje de Error</small>
         </div>
         <div class="mb-3">
           <label class="form-label" for="coments">Comentario:</label>
-          <textarea class="form-control"></textarea>
+          <textarea class="form-control" id="coments"></textarea>
+          <small class="messague" id="messaguecoments">Mensaje de Error</small>
         </div>
-        <button class="btn btn-primary" type="submit"><i class="fa-solid fa-paper-plane"></i> Enviar</button>
+
+        <div class="content-align-column-center" id="loaded">
+          <div class="spinner-border" role="status"></div>
+          <div>Cargando</div>
+        </div>
+        
+
+        <button class="btn btn-primary" type="button" id="btnguardar"><i class="fa-solid fa-paper-plane"></i> Enviar</button>
       </form>
 
     </div>
