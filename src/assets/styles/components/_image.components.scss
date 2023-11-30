@@ -54,8 +54,30 @@
 }
 
 .image-content-blog {
-  height: 500px;
+  height: 250px;
   width: 100%;
 
   object-fit:fill;
+}
+
+@container (min-width: 500px) {
+    
+  .image-content-blog {
+    height: 300px;
+    width: 100%;
+  
+    object-fit:fill;
+  }
+  
+}
+
+@container (min-width: 800px) {
+    
+  .image-content-blog {
+    height: 600px;
+    width: 100%;
+  
+    object-fit:fill;
+  }
+  
 }
