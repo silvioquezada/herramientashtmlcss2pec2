@@ -7,6 +7,9 @@
 @import "imports/components.imports";
 @import "imports/utilities.imports";
 
-@layer bootstrap {
+
+@layer {
+
     @import "imports/bootstrap.imports";
+    
 }

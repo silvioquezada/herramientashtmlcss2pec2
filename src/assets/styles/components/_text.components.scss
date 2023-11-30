@@ -1,14 +1,17 @@
 @layer fonts, shapes, colors;
 
 @layer fonts {
+
   .text-title { @include aparence-text($font-size: $font-size-big - 10px, $font-weight: bold); }
 
   .text-medium { @include aparence-text($font-size: $font-size-medium, $font-weight: 100); }
   
   @container (min-width: 500px) {
+
     .text-title { @include aparence-text($font-size: $font-size-big, $font-weight: bold); }
   
     .text-medium { @include aparence-text($font-size: $font-size-medium, $font-weight: 100); }
+
   }
   
   .text-normal {
@@ -26,17 +29,21 @@
   }
   
   @container (min-width: 500px) {
+
     .text-item {
       @include aparence-text($font-size: $font-size-normal, $font-weight: 700);
       padding-top: 5%;
     }
+
   }
   
-  @container (min-width: 800px) {   
+  @container (min-width: 800px) {
+
     .text-item {
       @include aparence-text($font-size: $font-size-normal, $font-weight: 700);
       padding-top: 3%;
     }
+    
   }
   
   .title-content {
@@ -45,9 +52,11 @@
   }
 
   .text-content { @include aparence-text($font-size: $font-size-small, $font-weight: 100); }
+
 }
 
 @layer shapes {
+
   .text-circle {
     display: inline-block;
     margin-right: 15px;
@@ -61,9 +70,11 @@
     background: $color-primary;
     border-radius: 0.8em;
   }
+
 }
 
 @layer colors {
+
   .text-color-black { color: $color-primary; }
 
   .text-color-white { color: $color-white; }
@@ -71,5 +82,6 @@
   .text-color-yellow { color: $color-yellow; }
   
   .text-shading { background-color: $color-shading; }
+
 }
 

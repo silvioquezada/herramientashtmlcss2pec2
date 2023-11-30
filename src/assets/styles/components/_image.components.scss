@@ -15,6 +15,7 @@
 }
 
 @supports (display: grid) {
+
   .image-front-page {
     padding: 0%;
     width: 100%;
@@ -26,9 +27,11 @@
   
     opacity: 0.9;
   }
+
 }
 
 @supports not (display: grid) {
+
   .image-front-page {
     padding-left: 37%;
     width: 25%;
@@ -36,6 +39,7 @@
     object-fit: cover;
     cursor: default;
   }
+
 }
 
 .image-card {
@@ -60,19 +64,23 @@
 }
 
 @container (min-width: 500px) {
+
   .image-content-blog {
     height: 300px;
     width: 100%;
   
     object-fit:fill;
   }
+
 }
 
 @container (min-width: 800px) {
+
   .image-content-blog {
     height: 600px;
     width: 100%;
   
     object-fit:fill;
   }
+  
 }

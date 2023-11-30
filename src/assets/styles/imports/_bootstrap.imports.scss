@@ -19,8 +19,3 @@ $secondary: $color-yellow;
 @import "../../../../node_modules/bootstrap/scss/toasts";
 @import "../../../../node_modules/bootstrap/scss/modal"; // Requires transitions
 @import "../../../../node_modules/bootstrap/scss/spinners";
-
-
-.bi {
-  fill: currentcolor;
-}

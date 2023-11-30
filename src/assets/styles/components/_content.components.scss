@@ -2,6 +2,7 @@
 
 @layer containers {
   @container (min-width: 500px) {
+
     .content-align-row-left {
       text-align: left;
     }
@@ -14,6 +15,7 @@
     
       text-align: right;
     }
+
   }
   
   .content-align-row-center {
@@ -65,6 +67,7 @@
 }
 
 @layer block {
+
   .block-inline-right {
     padding-left: 12px;
     display: inline-block;
@@ -77,6 +80,7 @@
   }
   
   @container footer (min-width: 500px) {
+
     .block-inline-left {
       padding-top: 0;
       padding-left: 0;
@@ -84,9 +88,11 @@
       padding-right: 5px;
       display: inline-block;
     }
+
   }
   
   @container footer (min-width: 800px) {
+
     .block-inline-left {
       padding-top: 0;
       padding-left: 0;
@@ -94,6 +100,7 @@
       padding-right: 20px;
       display: inline-block;
     }
+
   }
 
   .section-row {
@@ -104,12 +111,15 @@
   .column-2 { padding-top: 5%; }
 
   @container (min-width: 800px) {  
+
     .column-2 { padding-top: 0%; }
+
   }
   
 }
 
 @layer margin {
+
   .bleeding-margin-left { padding-left: 6%; }
 
   .bleeding-margin-right { padding-right: 6%; }
@@ -127,9 +137,11 @@
     .bleeding-margin-right { padding-right: 6%; }
     
   }
+
 }
 
 @layer margin {
+
   .content-color-gris {
     background-color: $color-primary;
   }
@@ -138,6 +150,7 @@
     border-top: 1px solid $color-primary;
     border-bottom: 1px solid $color-primary;
   }
+  
 }
 
 
