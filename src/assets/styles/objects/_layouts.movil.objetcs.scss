@@ -11,17 +11,14 @@
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
-    //border: 1px solid rgb(190, 76, 10);
   }
 
   .nav {
     display: flex;
-    //border: 1px solid rgb(190, 76, 10);
   }
 
   .container {
     container-type: inline-size;
-    //container-name: container-content;
 
     padding-left: 6%;
     padding-right: 6%;
@@ -29,14 +26,12 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    //border: 1px solid rgb(190, 76, 10);
   }
 
   .container-contend-front-page {
     container-type: inline-size;
     container-name: front-page;
     width: 100%;
-    //border: 1px solid rgb(190, 76, 10);
   }
 
   .footer {
@@ -50,10 +45,6 @@
     width: 100%;
   }
 
-  // .bleeding-margin-left { padding-left: 6%; }
-
-  // .bleeding-margin-right { padding-right: 6%; }
-
   @supports (display: grid) {
   
     .root-grid-blog {    
@@ -63,7 +54,6 @@
       gap: 0%;
   
       width: 100%;
-      //border: 1px solid rgb(49, 10, 190);
     }
   
     .image-title-blog {
@@ -75,7 +65,6 @@
       grid-column: 1;
       grid-row: 2;
       text-align: center;
-      //border: 1px solid rgb(46, 190, 10);
     }
   }
 
@@ -95,7 +84,6 @@
       gap: 0%;
   
       width: 100%;
-      
     }
   
     .container-front-page {
@@ -120,7 +108,7 @@
       grid-row: 2;
       align-items: center;
       justify-content: center;
-      border: 1px solid rgb(22, 190, 10);
+      text-align: center;
     }
 
   }
@@ -142,13 +130,11 @@
       gap: 0%;
   
       width: 100%;
-      //border: 1px solid rgb(49, 10, 190);
     }
   
     .container-front-page {
       grid-column: 1 / 6;
       grid-row: 2;
-      //border: 1px solid rgb(49, 10, 190);
     }
   
     .image-front-page {
@@ -160,14 +146,13 @@
       grid-column: 2;
       grid-row: 1;
       text-align: left;
-      
-      border: 1px solid rgb(49, 10, 190);
     }
   
     .nav-front-page {
       grid-column: 3 / 5;
       grid-row: 1;
-      //border: 1px solid rgb(22, 190, 10);
+      align-items: center;
+      justify-content: end;
     }
     
   }

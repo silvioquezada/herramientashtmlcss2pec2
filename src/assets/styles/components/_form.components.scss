@@ -21,19 +21,16 @@
   background: color(display-p3 2 100 0);
 }
 
-.tast-align-row-right {
+.toast-relative-error {
+  background: hwb(0 10% 10%);
+  color: $color-white;
+}
+
+.toast-align-row-right {
   @extend %flexbox-row-wrap;
   justify-content:space-between;
   align-items: center;
   width: 100%;
 
   text-align: right;
-}
-
-.column-2 { padding-top: 5%; }
-
-@container (min-width: 800px) {
-    
-  .column-2 { padding-top: 0%; }
-  
 }

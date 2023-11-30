@@ -1,72 +1,75 @@
-.text-title { @include aparence-text($font-size: $font-size-big - 10px, $font-weight: bold); }
+@layer fonts, shapes, colors;
 
-.text-medium { @include aparence-text($font-size: $font-size-medium, $font-weight: 100); }
-
-@container (min-width: 500px) {
-    
-  .text-title { @include aparence-text($font-size: $font-size-big, $font-weight: bold); }
+@layer fonts {
+  .text-title { @include aparence-text($font-size: $font-size-big - 10px, $font-weight: bold); }
 
   .text-medium { @include aparence-text($font-size: $font-size-medium, $font-weight: 100); }
   
-}
-
-.text-normal {
-  @include aparence-text($font-size: $font-size-normal, $font-weight: 100);
-  padding-bottom: 2%;
-}
-
-.text-bold {
-  font-weight: 700;
-}
-
-.text-item {
-  @include aparence-text($font-size: $font-size-normal, $font-weight: 700);
-  padding-top: 8%;
-}
-
-@container (min-width: 500px) {
-    
+  @container (min-width: 500px) {
+    .text-title { @include aparence-text($font-size: $font-size-big, $font-weight: bold); }
+  
+    .text-medium { @include aparence-text($font-size: $font-size-medium, $font-weight: 100); }
+  }
+  
+  .text-normal {
+    @include aparence-text($font-size: $font-size-normal, $font-weight: 100);
+    padding-bottom: 2%;
+  }
+  
+  .text-bold {
+    font-weight: 700;
+  }
+  
   .text-item {
     @include aparence-text($font-size: $font-size-normal, $font-weight: 700);
+    padding-top: 8%;
+  }
+  
+  @container (min-width: 500px) {
+    .text-item {
+      @include aparence-text($font-size: $font-size-normal, $font-weight: 700);
+      padding-top: 5%;
+    }
+  }
+  
+  @container (min-width: 800px) {   
+    .text-item {
+      @include aparence-text($font-size: $font-size-normal, $font-weight: 700);
+      padding-top: 3%;
+    }
+  }
+  
+  .title-content {
+    @include aparence-text($font-size: $font-size-medium, $font-weight: bold);
     padding-top: 5%;
   }
 
+  .text-content { @include aparence-text($font-size: $font-size-small, $font-weight: 100); }
 }
 
-@container (min-width: 800px) {
-    
-  .text-item {
-    @include aparence-text($font-size: $font-size-normal, $font-weight: 700);
-    padding-top: 3%;
+@layer shapes {
+  .text-circle {
+    display: inline-block;
+    margin-right: 15px;
+    padding: 0;
+    line-height: 1.6em;
+    width: 1.6em;
+  
+    font-weight: bold;
+    text-align: center;
+  
+    background: $color-primary;
+    border-radius: 0.8em;
   }
-
 }
 
-.title-content {
-  @include aparence-text($font-size: $font-size-medium, $font-weight: bold);
-  padding-top: 5%;
+@layer colors {
+  .text-color-black { color: $color-primary; }
+
+  .text-color-white { color: $color-white; }
+  
+  .text-color-yellow { color: $color-yellow; }
+  
+  .text-shading { background-color: $color-shading; }
 }
 
-.text-content { @include aparence-text($font-size: $font-size-small, $font-weight: 100); }
-
-.text-circle {
-  display: inline-block;
-  margin-right: 15px;
-  padding: 0;
-  line-height: 1.6em;
-  width: 1.6em;
-
-  font-weight: bold;
-  text-align: center;
-
-  background: $color-primary;
-  border-radius: 0.8em;
-}
-
-.text-color-black { color: $color-primary; }
-
-.text-color-white { color: $color-white; }
-
-.text-color-yellow { color: $color-yellow; }
-
-.text-shading { background-color: $color-shading; }

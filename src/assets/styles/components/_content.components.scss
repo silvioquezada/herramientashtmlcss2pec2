@@ -1,131 +1,143 @@
-@container (min-width: 500px) {
-    
-  .content-align-row-left {
-    text-align: left;
-  }
+@layer containers, block, margin, other;
 
-  .content-align-row-right {
+@layer containers {
+  @container (min-width: 500px) {
+    .content-align-row-left {
+      text-align: left;
+    }
+  
+    .content-align-row-right {
+      @extend %flexbox-row-wrap;
+      justify-content: end;
+      align-items: center;
+      width: 100%;
+    
+      text-align: right;
+    }
+  }
+  
+  .content-align-row-center {
     @extend %flexbox-row-wrap;
-    justify-content: end;
-    align-items: center;
+    justify-content: center;
+    align-items: left;
     width: 100%;
   
-    text-align: right;
+    text-align: center;
   }
   
-}
-
-
-.content-align-row-center {
-  @extend %flexbox-row-wrap;
-  justify-content: center;
-  align-items: left;
-  width: 100%;
-
-  text-align: center;
-}
-
-.content-align-column-center {
-  padding-top: 15%;
-  @extend %flexbox-column-wrap;
-  text-align: center;
-}
-
-@container (min-width: 500px) {
-    
   .content-align-column-center {
-    padding-top: 0;
+    padding-top: 15%;
     @extend %flexbox-column-wrap;
+    text-align: center;
+  }
+  
+  @container (min-width: 500px) {
+      
+    .content-align-column-center {
+      padding-top: 0;
+      @extend %flexbox-column-wrap;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    
+      text-align: left;
+    }
+    
+  }
+  
+  .content-align-column-normal {
+    @extend %flexbox-row;
     justify-content: center;
-    align-items: center;
-    height: 100%;
-  
-    text-align: left;
+  }
+
+  .content-full {
+    padding-left: 0;
+    padding-right: 0;
   }
   
+  .content-summary {
+    @extend %flexbox-row-wrap;
+  }
+  
+  .content-width-x1 { @include width-flex($width: 25%, $flex: 100px); }
+  
+  .content-width-x2 { @include width-flex($width: 50%, $flex: 200px); }
 }
 
-.content-align-column-normal {
-  @extend %flexbox-row;
-  justify-content: center;
-}
-
-.block-inline-right {
-  padding-left: 12px;
-  display: inline-block;
-}
-
-.block-inline-left {
-  padding: 1%;
-  display: inline-block;
-
-}
-
-@container footer (min-width: 500px) {
-    
-  .block-inline-left {
-    padding-top: 0;
-    padding-left: 0;
-    padding-bottom: 0;
-    padding-right: 5px;
+@layer block {
+  .block-inline-right {
+    padding-left: 12px;
     display: inline-block;
   }
   
-}
-
-@container footer (min-width: 800px) {
-    
   .block-inline-left {
-    padding-top: 0;
-    padding-left: 0;
-    padding-bottom: 0;
-    padding-right: 20px;
+    padding: 1%;
     display: inline-block;
+  
+  }
+  
+  @container footer (min-width: 500px) {
+    .block-inline-left {
+      padding-top: 0;
+      padding-left: 0;
+      padding-bottom: 0;
+      padding-right: 5px;
+      display: inline-block;
+    }
+  }
+  
+  @container footer (min-width: 800px) {
+    .block-inline-left {
+      padding-top: 0;
+      padding-left: 0;
+      padding-bottom: 0;
+      padding-right: 20px;
+      display: inline-block;
+    }
+  }
+
+  .section-row {
+    padding: 1%;
+    width: 100%;
+  }
+
+  .column-2 { padding-top: 5%; }
+
+  @container (min-width: 800px) {  
+    .column-2 { padding-top: 0%; }
   }
   
 }
 
-.section-row {
-  padding: 1%;
-  width: 100%;
-}
-
-.content-color-gris {
-  background-color: $color-primary;
-}
-
-.bleeding-margin-left { padding-left: 6%; }
-
-.bleeding-margin-right { padding-right: 6%; }
-
-@container footer (min-width: 50px) {
-    
-  .bleeding-margin-left { padding-left: 0%; }
- 
-}
-
-@container footer (min-width: 500px) {
-    
+@layer margin {
   .bleeding-margin-left { padding-left: 6%; }
 
   .bleeding-margin-right { padding-right: 6%; }
   
+  @container footer (min-width: 50px) {
+      
+    .bleeding-margin-left { padding-left: 0%; }
+   
+  }
+  
+  @container footer (min-width: 500px) {
+      
+    .bleeding-margin-left { padding-left: 6%; }
+  
+    .bleeding-margin-right { padding-right: 6%; }
+    
+  }
 }
 
-.content-full {
-  padding-left: 0;
-  padding-right: 0;
+@layer margin {
+  .content-color-gris {
+    background-color: $color-primary;
+  }
+
+  .lineal-border-top-bottom {
+    border-top: 1px solid $color-primary;
+    border-bottom: 1px solid $color-primary;
+  }
 }
 
-.content-summary {
-  @extend %flexbox-row-wrap;
-}
 
-.content-width-x1 { @include width-flex($width: 25%, $flex: 100px); }
-
-.content-width-x2 { @include width-flex($width: 50%, $flex: 200px); }
-
-.lineal-border-top-bottom {
-  border-top: 1px solid $color-primary;
-  border-bottom: 1px solid $color-primary;
-}

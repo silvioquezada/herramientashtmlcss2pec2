@@ -7,6 +7,7 @@ const coments = document.getElementById("coments");
 const messaguecoments = document.getElementById("messaguecoments");
 const loaded = document.getElementById("loaded");
 const toastmessague = document.getElementById("toastmessague");
+const toastmessagueerror = document.getElementById("toastmessagueerror");
 
 function showSuccess(input){
   const formControl = input.parentElement;
@@ -24,6 +25,7 @@ function formnormalize() {
   coments.value = "";
   loaded.className = "content-align-column-center hidden-loaded";
   toastmessague.className = "toast toast-relative";
+  toastmessagueerror.className = "toast toast-relative toast-relative-error";
   username.className = "form-control";
   email.className = "form-control";
   coments.className = "form-control";
@@ -106,6 +108,10 @@ function guardar() {
    })
    .catch(err => {
    console.log('Solicitud fallida', err);
-    loaded.className = "content-align-column-center hidden-loaded";
+   loaded.className = "content-align-column-center hidden-loaded";
+    toastmessagueerror.className = "toast show toast-relative toast-relative-error";
+    setTimeout(function(){
+      formnormalize();
+    },2000);  
   });
 }
