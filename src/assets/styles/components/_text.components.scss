@@ -1,6 +1,14 @@
-.text-title { @include aparence-text($font-size: $font-size-big, $font-weight: bold); }
+.text-title { @include aparence-text($font-size: $font-size-big - 10px, $font-weight: bold); }
 
 .text-medium { @include aparence-text($font-size: $font-size-medium, $font-weight: 100); }
+
+@container (min-width: 500px) {
+    
+  .text-title { @include aparence-text($font-size: $font-size-big, $font-weight: bold); }
+
+  .text-medium { @include aparence-text($font-size: $font-size-medium, $font-weight: 100); }
+  
+}
 
 .text-normal {
   @include aparence-text($font-size: $font-size-normal, $font-weight: 100);

@@ -1,19 +1,20 @@
-.content-align-row-right {
-  @extend %flexbox-row-wrap;
-  justify-content: end;
-  align-items: center;
-  width: 100%;
+@container (min-width: 500px) {
+    
+  .content-align-row-left {
+    text-align: left;
+  }
 
-  text-align: right;
+  .content-align-row-right {
+    @extend %flexbox-row-wrap;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+  
+    text-align: right;
+  }
+  
 }
 
-.content-align-row-left {
-  @extend %flexbox-row-wrap;
-  width: 100%;
-  padding-left: 2px;
-
-  text-align: left;
-}
 
 .content-align-row-center {
   @extend %flexbox-row-wrap;
@@ -25,12 +26,23 @@
 }
 
 .content-align-column-center {
+  padding-top: 15%;
   @extend %flexbox-column-wrap;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+  text-align: center;
+}
 
-  text-align: left;
+@container (min-width: 500px) {
+    
+  .content-align-column-center {
+    padding-top: 0;
+    @extend %flexbox-column-wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  
+    text-align: left;
+  }
+  
 }
 
 .content-align-column-normal {
@@ -44,8 +56,33 @@
 }
 
 .block-inline-left {
-  padding-right: 20px;
+  padding: 1%;
   display: inline-block;
+
+}
+
+@container footer (min-width: 500px) {
+    
+  .block-inline-left {
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    padding-right: 5px;
+    display: inline-block;
+  }
+  
+}
+
+@container footer (min-width: 800px) {
+    
+  .block-inline-left {
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    padding-right: 20px;
+    display: inline-block;
+  }
+  
 }
 
 .section-row {
@@ -57,15 +94,21 @@
   background-color: $color-primary;
 }
 
-.bleeding-margin-left { padding-left: 3%; }
+.bleeding-margin-left { padding-left: 6%; }
 
-.bleeding-margin-right { padding-right: 3%; }
+.bleeding-margin-right { padding-right: 6%; }
 
-@container (min-width: 500px) {
+@container footer (min-width: 50px) {
     
-  .bleeding-margin-left { padding-left: 5%; }
+  .bleeding-margin-left { padding-left: 0%; }
+ 
+}
 
-  .bleeding-margin-right { padding-right: 5%; }
+@container footer (min-width: 500px) {
+    
+  .bleeding-margin-left { padding-left: 6%; }
+
+  .bleeding-margin-right { padding-right: 6%; }
   
 }
 

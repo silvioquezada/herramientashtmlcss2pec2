@@ -21,6 +21,7 @@
 
   .container {
     container-type: inline-size;
+    //container-name: container-content;
 
     padding-left: 6%;
     padding-right: 6%;
@@ -31,24 +32,21 @@
     //border: 1px solid rgb(190, 76, 10);
   }
 
+  .container-contend-front-page {
+    container-type: inline-size;
+    container-name: front-page;
+    width: 100%;
+    //border: 1px solid rgb(190, 76, 10);
+  }
+
   .footer {
+    container-type: inline-size;
+    container-name: footer;
+
     display: flex;
     align-items:flex-start;
     flex-wrap:wrap;
     flex-direction:column;
     width: 100%;
-  }
-
-
-  
-
-  @supports (display: grid) {
-    
-  }
-
-  @supports not (display: grid) {
-    .root-front-page {    
-      background-color: $color-primary;
-    }
   }
 }
