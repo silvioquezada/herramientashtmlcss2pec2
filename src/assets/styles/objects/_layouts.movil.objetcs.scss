@@ -1,56 +1,113 @@
+.root {
+  display:flex;
+  flex-flow:column wrap;
+}
+
 .header {
-  margin: 0;
-  padding: 0;
-  
-  @extend %flexbox-column;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  
-  background-color: $background-color-header;
-  border: 1px solid $color-border-card;
+  flex-direction: column;
+  width: 100%;
+  //border: 1px solid rgb(190, 76, 10);
+}
+
+.nav {
+  display: flex;
+  //border: 1px solid rgb(190, 76, 10);
 }
 
 .container {
-  margin: 0;
-  padding: 0;
+  //container-type: inline-size;
 
-  @extend %flexbox-row;
-  flex-wrap: wrap;
-  row-gap: 20px;
-  column-gap: 0;
+  padding-left: 6%;
+  padding-right: 6%;
 
-  background-color:  $background-color-container;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .footer {
-  margin: 0;
-  padding: 1%;
-
-  @extend %flexbox-column;
-  justify-content: center;
-  align-items: center;
-  color: $color-white;
-
+  display: flex;
+  align-items:center;
+  flex-wrap:wrap;
+  flex-direction:column;
   text-align: center;
-
-  background-color: $background-color-footer;
+  width: 100%;
 }
 
-.content {
-  margin: 1%;
-  padding: 1%;
 
-  @extend %flexbox-column;
-  flex: 400px;
-  height: auto;
+
+
+
+
+@supports (display: grid) {
+  .root-front-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15vh 15vh 80vh auto;
+    gap: 0%;
+
+    width: 100%;
+    border: 1px solid rgb(49, 10, 190);
+  }
+
+  .container-front-page {
+    grid-column: 1;
+    grid-row: 3;
+    border: 1px solid rgb(49, 10, 190);
+  }
+
+  .image-front-page {
+    grid-column: 1;
+    grid-row: 1 / 4;
+  }
+
+  .header-front-page {
+    grid-column: 1;
+    grid-row: 1;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(49, 10, 190);
+  }
+
+  .nav-front-page {
+    grid-column: 1;
+    grid-row: 2;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(22, 190, 10);
+  }
+
+  .root-grid-blog {    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25vh 15vh 25vh;
+    gap: 0%;
+
+    width: 100%;
+    border: 1px solid rgb(49, 10, 190);
+  }
+
+  .image-title-blog {
+    grid-column: 1;
+    grid-row: 1 / 4;
+  }
+
+  .text-grid-blog {    
+    grid-column: 1;
+    grid-row: 2;
+    text-align: center;
+    border: 1px solid rgb(46, 190, 10);
+  }
+
+
 }
 
-.sidebar {
-  margin: 1%;
-  padding: 1%;
-
-  @extend %flexbox-column;
-  
-  flex: 50px;
-  height: auto;
+@supports not (display: grid) {
+  .root-front-page {    
+    background-color: $color-primary;
+  }
 }

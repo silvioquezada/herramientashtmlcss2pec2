@@ -1,26 +1,112 @@
 @media screen and (min-width: $medium-width) {
   
-  .header { flex-direction: row; }
+  .root {
+    display:flex;
+	  flex-flow:row wrap;
+  }
 
-  .content {
-    margin-top: 20px;
-    margin-bottom: 0px;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 0px;
-    padding-left: 20px;
-    padding-right: 20px;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
   }
+
+ 
+
+  .nav {
+    display: flex;
+  }
+
+  .container {
+    container-type: inline-size;
+
+    padding-left: 6%;
+    padding-right: 6%;
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  @container (min-width: 500px) {
+    .content-align-row-center {
+      border: 1px solid rgb(190, 10, 19);
+      background-color: aqua;
+  }
+ }
+
+  .footer {
+    display: flex;
+    align-items:center;
+    flex-direction:column;
+    text-align: center;
+    width: 100%;
+  }
+
+  @supports (display: grid) {
+    .root-front-page {
+      display: grid;
+      grid-template-columns: 0.2fr 1fr 1fr 1fr 0.2fr;
+      grid-template-rows: 15vh 80vh auto;
+      gap: 0%;
   
-  .sidebar {
-    margin-top: 0px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-top: 0px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+      width: 100%;
+      border: 1px solid rgb(49, 10, 190);
+    }
+  
+    .container-front-page {
+      grid-column: 1 / 6;
+      grid-row: 2;
+      border: 1px solid rgb(49, 10, 190);
+    }
+  
+    .image-front-page {
+      grid-column: 1 / 6;
+      grid-row: 1 / 3;
+    }
+  
+    .header-front-page {
+      grid-column: 2;
+      grid-row: 1;
+      border: 1px solid rgb(49, 10, 190);
+    }
+  
+    .nav-front-page {
+      grid-column: 3 / 5;
+      grid-row: 1;
+      border: 1px solid rgb(22, 190, 10);
+    }
+  
+    .root-grid-blog {    
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 25vh 15vh 25vh;
+      gap: 0%;
+  
+      width: 100%;
+      border: 1px solid rgb(49, 10, 190);
+    }
+  
+    .image-title-blog {
+      grid-column: 1;
+      grid-row: 1 / 4;
+    }
+  
+    .text-grid-blog {    
+      grid-column: 1;
+      grid-row: 2;
+      text-align: center;
+      border: 1px solid rgb(46, 190, 10);
+    }
   }
+
+  @supports not (display: grid) {
+    .root-front-page {    
+      background-color: $color-primary;
+    }
+  }
+
 }
