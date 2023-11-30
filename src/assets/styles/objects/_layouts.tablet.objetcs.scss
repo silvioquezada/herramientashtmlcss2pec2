@@ -31,12 +31,7 @@
     width: 100%;
   }
 
-  @container (min-width: 500px) {
-    .content-align-row-center {
-      border: 1px solid rgb(190, 10, 19);
-      background-color: aqua;
-  }
- }
+  
 
   .footer {
     display: flex;
