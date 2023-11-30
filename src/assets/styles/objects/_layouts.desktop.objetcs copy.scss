@@ -39,10 +39,6 @@
     width: 100%;
   }
 
-  .bleeding-margin-left { padding-left: 6%; }
-
-  .bleeding-margin-right { padding-right: 6%; }
-
   @supports (display: grid) {
     .root-front-page {
       display: grid;
@@ -53,6 +49,16 @@
       width: 100%;
       //border: 1px solid rgb(49, 10, 190);
     }
+
+    // @container (max-width: 500px) {
+    //   .image-title-blog {
+    //     border: 1px solid rgb(190, 10, 19);
+    //   }
+
+    //   .content-summary {
+    //     padding: 1%;
+    //   }
+    // }
   
     .container-front-page {
       grid-column: 1 / 6;

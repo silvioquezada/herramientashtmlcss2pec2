@@ -1,4 +1,14 @@
 article h2, article h3, article p {
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+@container (min-width: 800px) {
+    
+  article h2, article h3, article p {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  
+
 }

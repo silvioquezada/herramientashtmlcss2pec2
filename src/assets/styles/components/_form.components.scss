@@ -29,3 +29,11 @@
 
   text-align: right;
 }
+
+.column-2 { padding-top: 5%; }
+
+@container (min-width: 800px) {
+    
+  .column-2 { padding-top: 0%; }
+  
+}

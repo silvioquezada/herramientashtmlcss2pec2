@@ -1,0 +1,143 @@
+@media screen and (min-width: 10px) {
+.root {
+  display:flex;
+  flex-flow:column wrap;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  //border: 1px solid rgb(190, 76, 10);
+}
+
+.nav {
+  display: flex;
+  //border: 1px solid rgb(190, 76, 10);
+}
+
+.container {
+  //container-type: inline-size;
+
+  padding-left: 6%;
+  padding-right: 6%;
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  align-items:center;
+  flex-wrap:wrap;
+  flex-direction:column;
+  text-align: center;
+  width: 100%;
+}
+
+.block-inline-right {
+  //padding-left: 0;
+  //display: inline-block;
+  padding-top: 0;
+  border: 1px solid rgb(190, 76, 10);
+}
+
+.content-align-row-right {
+  //@extend %flexbox-column-wrap;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  // width: 100%;
+
+  // text-align: center;
+  // border: 1px solid rgb(190, 76, 10);
+}
+
+.bleeding-margin-left {
+  padding: 0;
+}
+
+.logo {
+  padding: 1%;
+  height: 50vh;
+  width: 13vh;
+}
+
+
+
+@supports (display: grid) {
+  .root-front-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15vh 10vh 80vh auto;
+    gap: 0%;
+
+    width: 100%;
+    border: 1px solid rgb(49, 10, 190);
+  }
+
+  .container-front-page {
+    grid-column: 1;
+    grid-row: 3;
+    border: 1px solid rgb(49, 10, 190);
+  }
+
+  .image-front-page {
+    grid-column: 1;
+    grid-row: 1 / 4;
+  }
+
+  .header-front-page {
+    grid-column: 1;
+    grid-row: 1;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(49, 10, 190);
+  }
+
+  .nav-front-page {
+    grid-column: 1;
+    grid-row: 2;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(22, 190, 10);
+  }
+
+  .root-grid-blog {    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25vh 15vh 25vh;
+    gap: 0%;
+
+    width: 100%;
+    border: 1px solid rgb(49, 10, 190);
+  }
+
+  .image-title-blog {
+    grid-column: 1;
+    grid-row: 1 / 4;
+  }
+
+  .text-grid-blog {    
+    grid-column: 1;
+    grid-row: 2;
+    text-align: center;
+    border: 1px solid rgb(46, 190, 10);
+  }
+
+
+}
+
+@supports not (display: grid) {
+  .root-front-page {    
+    background-color: $color-primary;
+  }
+}
+
+}

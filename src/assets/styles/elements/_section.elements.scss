@@ -1,6 +1,17 @@
 section:has(h2, ul) {
   padding-top: 3%;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 5%;
+  padding-right: 5%;
   padding-bottom: 0;
+}
+
+@container (min-width: 800px) {
+    
+  section:has(h2, ul) {
+    padding-top: 3%;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 0;
+  }
+
 }

@@ -13,7 +13,25 @@
 
 .text-item {
   @include aparence-text($font-size: $font-size-normal, $font-weight: 700);
-  padding-top: 3%;
+  padding-top: 8%;
+}
+
+@container (min-width: 500px) {
+    
+  .text-item {
+    @include aparence-text($font-size: $font-size-normal, $font-weight: 700);
+    padding-top: 5%;
+  }
+
+}
+
+@container (min-width: 800px) {
+    
+  .text-item {
+    @include aparence-text($font-size: $font-size-normal, $font-weight: 700);
+    padding-top: 3%;
+  }
+
 }
 
 .title-content {
