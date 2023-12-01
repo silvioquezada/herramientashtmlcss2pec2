@@ -12,17 +12,14 @@
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
-    //border: 1px solid rgb(190, 76, 10);
   }
 
   .nav {
     display: flex;
-    //border: 1px solid rgb(190, 76, 10);
   }
 
   .container {
     container-type: inline-size;
-    //container-name: container-content;
 
     padding-left: 6%;
     padding-right: 6%;
@@ -30,14 +27,12 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    //border: 1px solid rgb(190, 76, 10);
   }
 
   .container-contend-front-page {
     container-type: inline-size;
     container-name: front-page;
     width: 100%;
-    //border: 1px solid rgb(190, 76, 10);
   }
 
   .footer {

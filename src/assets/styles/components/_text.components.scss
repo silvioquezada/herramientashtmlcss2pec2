@@ -19,9 +19,7 @@
     padding-bottom: 2%;
   }
   
-  .text-bold {
-    font-weight: 700;
-  }
+  .text-bold { font-weight: 700; }
   
   .text-item {
     @include aparence-text($font-size: $font-size-normal, $font-weight: 700);

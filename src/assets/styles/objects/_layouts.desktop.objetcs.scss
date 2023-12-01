@@ -1,88 +1,80 @@
+.root {
+  display:flex;
+  flex-flow:row wrap;
+}
 
-  .root {
-    display:flex;
-	  flex-flow:row wrap;
+.header {
+  text-align: center;
+  width: 100%;
+}
+
+.container {
+  container-type: inline-size;
+
+  padding-left: 6%;
+  padding-right: 6%;
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.container-contend-front-page {
+  container-name: front-page;
+  container-type: inline-size;
+  width: 100%;
+}
+
+.footer {
+  container-type: inline-size;
+  container-name: footer;
+
+  display: flex;
+  align-items:flex-start;
+  flex-wrap:wrap;
+  flex-direction:column;
+  width: 100%;
+}
+
+.card-not-line { 
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 30px;
+}
+
+@supports (display: grid) {
+
+  .root-grid-blog {    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25vh 15vh 25vh;
+    gap: 0;
+
+    width: 100%;
   }
 
-  .header {
+  .image-title-blog {
+    grid-column: 1;
+    grid-row: 1 / 4;
+  }
+
+  .text-grid-blog {    
+    grid-column: 1;
+    grid-row: 2;
     text-align: center;
-    width: 100%;
-    //border: 1px solid rgb(190, 76, 10);
   }
 
-  .container {
-    container-type: inline-size;
-    //container-name: container-content;
+}
 
-    padding-left: 6%;
-    padding-right: 6%;
-
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    //border: 1px solid rgb(190, 76, 10);
-  }
-
-  .container-contend-front-page {
-    container-name: front-page;
-    container-type: inline-size;
-    width: 100%;
-    //border: 1px solid rgb(190, 76, 10);
-  }
-
-  .footer {
-    container-type: inline-size;
-    container-name: footer;
-
-    display: flex;
-    align-items:flex-start;
-    flex-wrap:wrap;
-    flex-direction:column;
-    width: 100%;
-  }
-
-  .card-not-line { 
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 5px;
-    padding-right: 30px;
+@supports not (display: grid) {
   
-    background: rgb(49, 10, 190);
+  .root-front-page {    
+    background-color: $color-primary;
   }
-
-  @supports (display: grid) {
-
-    .root-grid-blog {    
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 25vh 15vh 25vh;
-      gap: 0%;
   
-      width: 100%;
-    }
-  
-    .image-title-blog {
-      grid-column: 1;
-      grid-row: 1 / 4;
-    }
-  
-    .text-grid-blog {    
-      grid-column: 1;
-      grid-row: 2;
-      text-align: center;
-      //border: 1px solid rgb(46, 190, 10);
-    }
-
-  }
-
-  @supports not (display: grid) {
-    
-    .root-front-page {    
-      background-color: $color-primary;
-    }
-    
-  }
+}

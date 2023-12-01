@@ -112,7 +112,7 @@
 
   @container (min-width: 800px) {  
 
-    .column-2 { padding-top: 0%; }
+    .column-2 { padding-top: 0; }
 
   }
   
@@ -126,7 +126,7 @@
   
   @container footer (min-width: 50px) {
       
-    .bleeding-margin-left { padding-left: 0%; }
+    .bleeding-margin-left { padding-left: 0; }
    
   }
   
@@ -152,5 +152,3 @@
   }
   
 }
-
-

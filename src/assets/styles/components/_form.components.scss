@@ -1,29 +1,27 @@
-.hidden-loaded {
-  display: none;
-}
+.hidden-loaded { display: none; }
 
 .messague-error {
-  color: rgb( 180 27 10 );
-  visibility: visible;
   bottom: -10px;
   padding-bottom: 20%;
 
   font-style: italic;
+  color: rgb( 180 27 10 );
+
+  visibility: visible;
 }
 
-.messague {
-  visibility: hidden;
-}
+.messague { visibility: hidden; }
 
 .toast-relative {
   position: absolute;
   right: 2%;
+
   background: color(display-p3 2 100 0);
 }
 
 .toast-relative-error {
-  background: hwb(0 10% 10%);
   color: $color-white;
+  background: hwb(0 10% 10%);
 }
 
 .toast-align-row-right {
