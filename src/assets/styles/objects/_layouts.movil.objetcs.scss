@@ -49,6 +49,52 @@
 
 @supports (display: grid) {
 
+  .root-front-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15vh 10vh 60vh;
+    gap: 0;
+
+    width: 100%;
+  }
+
+  .container-front-page {
+    grid-column: 1;
+    grid-row: 3;
+    
+  }
+
+  .image-front-page {
+    grid-column: 1;
+    grid-row: 1 / 4;
+  }
+
+  .header-front-page {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: center;
+  }
+
+  .nav-front-page {
+    grid-column: 1;
+    grid-row: 2;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+}
+
+@supports not (display: grid) {
+
+  .root-front-page {    
+    background-color: $color-primary;
+  }
+
+}
+
+@supports (display: grid) {
+
   .root-grid-blog {    
     display: grid;
     grid-template-columns: 1fr;
@@ -73,7 +119,7 @@
 
 @supports not (display: grid) {
   
-  .root-front-page {    
+  .root-grid-blog {    
     background-color: $color-primary;
   }
   
