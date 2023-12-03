@@ -1,15 +1,15 @@
 $primary: $color-primary;
 $secondary: $color-yellow;
 
-@import "../../../../node_modules/bootstrap/scss/functions"; // Required
+@import "../../../../node_modules/bootstrap/scss/functions";
 
-@import "../../../../node_modules/bootstrap/scss/variables"; // Required
-@import "../../../../node_modules/bootstrap/scss/variables-dark"; // Required
+@import "../../../../node_modules/bootstrap/scss/variables";
+@import "../../../../node_modules/bootstrap/scss/variables-dark";
 
-@import "../../../../node_modules/bootstrap/scss/maps"; // Required
-@import "../../../../node_modules/bootstrap/scss/mixins"; // Required
+@import "../../../../node_modules/bootstrap/scss/maps";
+@import "../../../../node_modules/bootstrap/scss/mixins";
 
-@import "../../../../node_modules/bootstrap/scss/root"; // Required
+@import "../../../../node_modules/bootstrap/scss/root";
 @import "../../../../node_modules/bootstrap/scss/grid";
 @import "../../../../node_modules/bootstrap/scss/forms";
 @import "../../../../node_modules/bootstrap/scss/buttons";
@@ -17,5 +17,5 @@ $secondary: $color-yellow;
 @import "../../../../node_modules/bootstrap/scss/alert";
 @import "../../../../node_modules/bootstrap/scss/close";
 @import "../../../../node_modules/bootstrap/scss/toasts";
-@import "../../../../node_modules/bootstrap/scss/modal"; // Requires transitions
+@import "../../../../node_modules/bootstrap/scss/modal";
 @import "../../../../node_modules/bootstrap/scss/spinners";
